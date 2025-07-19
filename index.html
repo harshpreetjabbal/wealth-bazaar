@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wealth Bazaar - Financial Marketplace</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Top Navigation Bar -->
@@ -97,6 +93,27 @@
             <h2>Featured Deals</h2>
             <div class="deals-container">
                 <div class="deal-card">
+                    <section class="credit-cards">
+    <h2>Compare & Apply for Credit Cards</h2>
+    <div class="card-comparison">
+        <!-- Card 1 -->
+        <div class="card-item">
+            <img src="images/axis-card.png" alt="Axis Bank Card">
+            <h3>Axis Bank ACE</h3>
+            <p>5% cashback on bill payments</p>
+            <p>Joining Fee: ₹500</p>
+            <button class="apply-btn" data-card="axis-ace">Apply Now</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-item">
+            <img src="images/hdfc-card.png" alt="HDFC Bank Card">
+            <h3>HDFC Millennia</h3>
+            <p>5% cashback on online shopping</p>
+            <p>Joining Fee: ₹1,000</p>
+            <button class="apply-btn" data-card="hdfc-millennia">Apply Now</button>
+        </div>
+    </div>
+</section>
                     <h3>Personal Loan @ 10.5%</h3>
                     <p>Axis Bank</p>
                     <button>Apply Now</button>
@@ -116,6 +133,53 @@
     </section>
 
     <!-- Financial Tools -->
+     <section class="affiliate-payout">
+    <h2>Affiliate Payout Slabs</h2>
+    <table class="payout-table">
+        <thead>
+            <tr>
+                <th>Referrals</th>
+                <th>Commission Rate</th>
+                <th>Bonus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1-5</td>
+                <td>5%</td>
+                <td>₹500</td>
+            </tr>
+            <tr>
+                <td>6-20</td>
+                <td>7%</td>
+                <td>₹1,000</td>
+            </tr>
+            <tr>
+                <td>21+</td>
+                <td>10%</td>
+                <td>₹5,000</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="affiliate-dashboard">
+        <h3>Your Earnings</h3>
+        <p>Total Referrals: <span id="ref-count">0</span></p>
+        <p>Current Commission Rate: <span id="commission-rate">0%</span></p>
+        <p>Projected Earnings: ₹<span id="projected-earnings">0</span></p>
+    </div>
+</section>
+     <section class="download-options">
+    <h2>Download Financial Reports</h2>
+    <div class="download-buttons">
+        <button id="download-excel" class="download-btn">
+            <i class="fas fa-file-excel"></i> Download Excel
+        </button>
+        <button id="download-pdf" class="download-btn">
+            <i class="fas fa-file-pdf"></i> Download PDF
+        </button>
+    </div>
+</section>
     <section class="financial-tools">
         <div class="container">
             <h2>Financial Tools</h2>
@@ -204,7 +268,7 @@
                     <h3>Contact</h3>
                     <ul>
                         <li><i class="fas fa-envelope"></i> support@wealthbazaar.com</li>
-                        <li><i class="fab fa-whatsapp"></i> +91 XXXXX XXXXX</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 8810311770</li>
                     </ul>
                 </div>
                 <div class="link-group">
